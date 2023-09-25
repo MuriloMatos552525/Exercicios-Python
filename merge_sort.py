@@ -27,4 +27,23 @@ def merge_sort(lita):
                 j+=1 
             k+=1
 
+        # verificação dos itens da esquerda
+        while(i<len(esquerda)):
+            lista[k] = esquerda[i]
+            i+=1
+            k+=1
+
+        # verificação dos itens da direita
+        while(j<len(direita)):
+            lista[k] = direita[j]
+            j+=1
+            k+=1
+
+#principal
+lista = [12, 11, 13, 5, 6, 7]
+print(f'Lista original {lista}')
+
+merge_sort(lista)
+
+print(f'Lista Ordenada: {lista}')
         
